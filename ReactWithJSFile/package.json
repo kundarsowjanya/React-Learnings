@@ -1,0 +1,28 @@
+{
+  "name": "react-learning",
+  "version": "1.0.0",
+  "description": "React Learning",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kundarsowjanya/React-Learnings.git"
+  },
+  "author": "Sowjanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kundarsowjanya/React-Learnings/issues"
+  },
+  "homepage": "https://github.com/kundarsowjanya/React-Learnings#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "last 2 version"
+  ]
+}
