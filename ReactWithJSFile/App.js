@@ -1,17 +1,36 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent=React.createElement("div",{id:"parent"},
-    React.createElement("div",{id:"child"},
-        [React.createElement("h1",{},"Hello I'm H1 Tag"),
-            React.createElement("h2",{},"Hello I'm H2 Tag")]))
+const heading= React.createElement("h1",{id:"heading"},"Hello This is Sowjanya here")
 
-console.log(parent); //It will return an object
+//JSX---> it's react element which is object representation of UI
+//Babel is used to convert JSX to React.createElement which is understandable by the browser
+//JSX is faster than React.createElement because it performs optimization while converting to React.createElement
 
-const heading=React.createElement("h1",{id:"heading",xyz:"abc"}, "Hello World from React");
-console.log(heading); //It will return an object
+const jsxHeading = <h1 id="heading">Hello this is Sowj</h1>
 
-const root= ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(parent) 
-//render method is used to display the content on the screen, it will take object and convert it into HTML and display on the screen
+console.log(heading);
+console.log(jsxHeading);
+
+
+//React Functional Component
+
+const Title=()=><h1>This is Title</h1>
+
+// This is Component Composition // putting components inside other components
+const Heading=()=>{
+    return ( <div>
+        <Title/>
+        <h1 id="heading">Hello This is Sowjanya</h1>
+        </div>
+    )
+}
+
+
+const Heading1=()=> <div></div>
+
+
+const root= ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(<Heading/>)
