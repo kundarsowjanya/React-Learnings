@@ -48,3 +48,30 @@
     gap: 20px;
    
 }
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.shimmer-card{
+    height: 400px;
+    width: 200px;
+    background-color: #f0f0f0;
+    margin: 10px;
+}
+
+.shimmer-conatiner{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.login{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+    justify-content: center;
+}
