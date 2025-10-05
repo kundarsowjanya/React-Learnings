@@ -2,6 +2,7 @@ import RestroCard from "./RestroCard";
 import { resList } from "../utils/mockData";
 import  {useEffect, useState} from "react";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body=()=>{
   
@@ -15,7 +16,7 @@ const Body=()=>{
     },[])
 
     const fetchData=async()=>{
-      const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=19.9615398&lng=79.2961468&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+      const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9698196&lng=77.7499721&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
       const jsonData=await data.json();
       console.log(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       setListOfRestaurant(jsonData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
@@ -48,7 +49,7 @@ const Body=()=>{
           </div>
           <div className="restro-container">
             {
-               filteredRestaurant?.map((resObj)=>  <RestroCard key={resObj?.info?.id} resData={resObj}/>)
+               filteredRestaurant?.map((resObj)=> <Link key={resObj?.info?.id} to={`/restaurants/${resObj?.info?.id}`}><RestroCard  resData={resObj}/></Link>)
             }
            
           </div>
