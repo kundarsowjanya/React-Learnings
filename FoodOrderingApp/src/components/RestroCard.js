@@ -5,9 +5,9 @@ const RestroCard=(props)=>{
     const {cloudinaryImageId,name,cuisines,avgRating,costForTwo,sla}=resData?.info
     
     return(
-        <div className="restro-card" style={{background:"#f0f0f0"}}>
-            <img src={IMG_URL+cloudinaryImageId} alt="res-logo" className="res-logo"></img>
-            <h3>{name}</h3>
+        <div className="m-4 p-4 w-[250px] rounded-lg hover:bg-gray-200 bg-gray-100">
+            <img src={IMG_URL+cloudinaryImageId} alt="res-logo" className="rounded-lg"></img>
+            <h3 className="font-bold py-4 text-lg">{name}</h3>
             <h4>{cuisines.join(',')}</h4>
             <h4>{avgRating} stars</h4>
              <h4>{costForTwo}</h4>
