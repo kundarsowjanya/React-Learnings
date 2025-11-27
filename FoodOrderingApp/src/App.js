@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import Cart from "./components/Cart";
 //import Grocery from "./components/Grocery";
+import React from "react";
 
 const Grocery=lazy(()=>import("./components/Grocery"))
 const About=lazy(()=>import("./components/About"))
