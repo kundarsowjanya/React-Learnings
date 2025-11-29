@@ -1,6 +1,10 @@
 # Netfix GPT
  - Create react app
  - Configured Tailwind css
+ - Header
+ - Login Form
+ - Sign Up Form
+
 
 # Features
 - Login/Signup Page
@@ -12,7 +16,7 @@
      - Trailer in Background
      - Title and Description
      - Movie Suggestions
-       -MovieLists * N
+       - MovieLists * N
 - NetflixGPT
   - Search Bar
   - Movie Suggestions
