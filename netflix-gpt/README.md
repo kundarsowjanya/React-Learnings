@@ -1,9 +1,12 @@
 # Netfix GPT
  - Create react app
  - Configured Tailwind css
+ - Routing
  - Header
  - Login Form
  - Sign Up Form
+ - Form Validation
+ - useRef
 
 
 # Features
